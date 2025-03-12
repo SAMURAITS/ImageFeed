@@ -7,30 +7,32 @@
 
 import UIKit
 
-class ImagesListViewController: UIViewController {
+final class ImagesListViewController: UIViewController {
+    
+    // MARK: - @IBOutlet properties
     
     @IBOutlet private var table: UITableView!
     
-    private let photosName: [String] = Array (0..<20).map{ "\($0)" }
+    // MARK: - UITableViewDataSource
     
+    private let currentDate = Date()
+    private let photosName: [String] = Array(0..<20).map { "\($0)" }
     private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateStyle = .long
-        formatter.timeStyle = .none
+        formatter.dateFormat = "d MMMM yyyy"
+        formatter.locale = Locale(identifier: "ru_RU")
         return formatter
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        table.rowHeight = 200
         table.contentInset = UIEdgeInsets(top: 12, left: 0, bottom: 12, right: 0)
     }
-    //    MARK: - Class
     
 }
 
-// MARK: -
+// MARK: - UITableViewDelegate
 
 extension ImagesListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,7 +59,7 @@ extension ImagesListViewController {
         }
         
         cell.cellImage.image = image
-        cell.dateLabel.text = dateFormatter.string(from: Date())
+        cell.dateLabel.text = dateFormatter.string(from: currentDate)
         
         let isLiked = indexPath.row % 2 == 0
         let likeImage = isLiked ? UIImage(named: "like_button_on") : UIImage(named: "like_button_off")
