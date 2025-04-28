@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B2D856D2D06E6FE000D33A6 /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B2D85832D06E700000D33A6 /* ImageFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B2D858D2D06E700000D33A6 /* ImageFeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageFeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4AC0F52DA56B9800EB2F4F /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4AC0F62DA56B9800EB2F4F /* ImageFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4AC0F72DA56B9800EB2F4F /* ImageFeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageFeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -91,18 +91,10 @@
 				3B2D856F2D06E6FE000D33A6 /* ImageFeed */,
 				3B2D85862D06E700000D33A6 /* ImageFeedTests */,
 				3B2D85902D06E700000D33A6 /* ImageFeedUITests */,
-				3B2D856E2D06E6FE000D33A6 /* Products */,
+				3B4AC0F52DA56B9800EB2F4F /* ImageFeed.app */,
+				3B4AC0F62DA56B9800EB2F4F /* ImageFeedTests.xctest */,
+				3B4AC0F72DA56B9800EB2F4F /* ImageFeedUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		3B2D856E2D06E6FE000D33A6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3B2D856D2D06E6FE000D33A6 /* ImageFeed.app */,
-				3B2D85832D06E700000D33A6 /* ImageFeedTests.xctest */,
-				3B2D858D2D06E700000D33A6 /* ImageFeedUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +119,7 @@
 			packageProductDependencies = (
 			);
 			productName = ImageFeed;
-			productReference = 3B2D856D2D06E6FE000D33A6 /* ImageFeed.app */;
+			productReference = 3B4AC0F52DA56B9800EB2F4F /* ImageFeed.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3B2D85822D06E700000D33A6 /* ImageFeedTests */ = {
@@ -150,7 +142,7 @@
 			packageProductDependencies = (
 			);
 			productName = ImageFeedTests;
-			productReference = 3B2D85832D06E700000D33A6 /* ImageFeedTests.xctest */;
+			productReference = 3B4AC0F62DA56B9800EB2F4F /* ImageFeedTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3B2D858C2D06E700000D33A6 /* ImageFeedUITests */ = {
@@ -173,7 +165,7 @@
 			packageProductDependencies = (
 			);
 			productName = ImageFeedUITests;
-			productReference = 3B2D858D2D06E700000D33A6 /* ImageFeedUITests.xctest */;
+			productReference = 3B4AC0F72DA56B9800EB2F4F /* ImageFeedUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +201,7 @@
 			mainGroup = 3B2D85642D06E6FE000D33A6;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 3B2D856E2D06E6FE000D33A6 /* Products */;
+			productRefGroup = 3B2D85642D06E6FE000D33A6;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
