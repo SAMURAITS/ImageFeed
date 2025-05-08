@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XY0-Kk-9gE">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XY0-Kk-9gE">
                                 <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                                 <color key="backgroundColor" name="YPBlack"/>
                                 <prototypes>
@@ -93,6 +93,7 @@
                     <navigationItem key="navigationItem" id="RaX-n1-v29"/>
                     <connections>
                         <outlet property="table" destination="XY0-Kk-9gE" id="8V1-7T-ijf"/>
+                        <segue destination="gcV-1G-hfK" kind="presentation" identifier="ShowSingleImage" id="syX-WX-pIa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -225,9 +226,54 @@
             </objects>
             <point key="canvasLocation" x="-994.02985074626861" y="-682.37986270022873"/>
         </scene>
+        <!--Single Image View Controller-->
+        <scene sceneID="Vnv-5J-qSf">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="gcV-1G-hfK" customClass="SingleImageViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ff6-Aa-64J">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="oJO-bd-jnP">
+                                <rect key="frame" x="0.0" y="62" width="402" height="778"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHi-Ob-zDg">
+                                <rect key="frame" x="8" y="70" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="UYE-6i-hhw"/>
+                                    <constraint firstAttribute="height" constant="48" id="UeN-td-6dQ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="Backward"/>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="gcV-1G-hfK" eventType="touchUpInside" id="HQx-TW-127"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xuc-R3-lnZ"/>
+                        <color key="backgroundColor" name="YPBlack"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="oJO-bd-jnP" secondAttribute="bottom" constant="34" id="F0x-7a-FRD"/>
+                            <constraint firstItem="oJO-bd-jnP" firstAttribute="trailing" secondItem="ff6-Aa-64J" secondAttribute="trailing" id="HJt-vX-CU4"/>
+                            <constraint firstItem="oJO-bd-jnP" firstAttribute="top" secondItem="ff6-Aa-64J" secondAttribute="top" constant="62" id="Nnd-SW-0kW"/>
+                            <constraint firstItem="BHi-Ob-zDg" firstAttribute="leading" secondItem="xuc-R3-lnZ" secondAttribute="leading" constant="8" id="mAr-ct-6Ub"/>
+                            <constraint firstItem="BHi-Ob-zDg" firstAttribute="top" secondItem="xuc-R3-lnZ" secondAttribute="top" constant="8" id="qGC-Lt-jmH"/>
+                            <constraint firstItem="oJO-bd-jnP" firstAttribute="leading" secondItem="ff6-Aa-64J" secondAttribute="leading" id="vW8-pj-6II"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KUR-6g-Ncw"/>
+                    <connections>
+                        <outlet property="imageView" destination="oJO-bd-jnP" id="zyK-we-fzC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pho-Vp-f39" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826.86567164179098" y="-682.37986270022873"/>
+        </scene>
     </scenes>
     <resources>
         <image name="0" width="1600" height="1059"/>
+        <image name="Backward" width="24" height="24"/>
         <image name="Exit" width="24" height="24"/>
         <image name="avatar" width="70" height="70"/>
         <image name="like_button_on" width="42" height="42"/>
