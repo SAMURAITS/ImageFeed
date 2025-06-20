@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3B6B2B842DFF61EE00F2B6DC /* ImageFeed.app in Resources */ = {isa = PBXBuildFile; fileRef = 3B6B2B832DFF61EE00F2B6DC /* ImageFeed.app */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3B2D85842D06E700000D33A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,13 +28,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B4AC0F52DA56B9800EB2F4F /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4AC0F52DA56B9800EB2F4F /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ImageFeed.app; path = "/Users/samurai/Desktop/ImageFeed/build/Debug-iphoneos/ImageFeed.app"; sourceTree = "<absolute>"; };
 		3B4AC0F62DA56B9800EB2F4F /* ImageFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4AC0F72DA56B9800EB2F4F /* ImageFeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageFeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6B2B832DFF61EE00F2B6DC /* ImageFeed.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = ImageFeed.app; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3B2D85952D06E700000D33A6 /* Exceptions for "ImageFeed" folder in "ImageFeed" target */ = {
+		3B6B2B852DFF61FE00F2B6DC /* Exceptions for "ImageFeed" folder in "ImageFeed" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -43,7 +48,7 @@
 		3B2D856F2D06E6FE000D33A6 /* ImageFeed */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				3B2D85952D06E700000D33A6 /* Exceptions for "ImageFeed" folder in "ImageFeed" target */,
+				3B6B2B852DFF61FE00F2B6DC /* Exceptions for "ImageFeed" folder in "ImageFeed" target */,
 			);
 			path = ImageFeed;
 			sourceTree = "<group>";
@@ -91,9 +96,9 @@
 				3B2D856F2D06E6FE000D33A6 /* ImageFeed */,
 				3B2D85862D06E700000D33A6 /* ImageFeedTests */,
 				3B2D85902D06E700000D33A6 /* ImageFeedUITests */,
-				3B4AC0F52DA56B9800EB2F4F /* ImageFeed.app */,
 				3B4AC0F62DA56B9800EB2F4F /* ImageFeedTests.xctest */,
 				3B4AC0F72DA56B9800EB2F4F /* ImageFeedUITests.xctest */,
+				3B6B2B832DFF61EE00F2B6DC /* ImageFeed.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B6B2B842DFF61EE00F2B6DC /* ImageFeed.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
