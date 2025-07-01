@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		3B6B2B842DFF61EE00F2B6DC /* ImageFeed.app in Resources */ = {isa = PBXBuildFile; fileRef = 3B6B2B832DFF61EE00F2B6DC /* ImageFeed.app */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		3B2D85842D06E700000D33A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -28,16 +24,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B4AC0F52DA56B9800EB2F4F /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ImageFeed.app; path = "/Users/samurai/Desktop/ImageFeed/build/Debug-iphoneos/ImageFeed.app"; sourceTree = "<absolute>"; };
-		3B4AC0F62DA56B9800EB2F4F /* ImageFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4AC0F72DA56B9800EB2F4F /* ImageFeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageFeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B6B2B832DFF61EE00F2B6DC /* ImageFeed.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = ImageFeed.app; sourceTree = "<group>"; };
+		3B45F6A22E13037A00B70083 /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ImageFeed.app; path = "/Users/samurai/Desktop/ImageFeed/build/Debug-iphoneos/ImageFeed.app"; sourceTree = "<absolute>"; };
+		3B4AC0F62DA56B9800EB2F4F /* ImageFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ImageFeedTests.xctest; path = "/Users/samurai/Desktop/ImageFeed/build/Debug-iphoneos/ImageFeed.app/PlugIns/ImageFeedTests.xctest"; sourceTree = "<absolute>"; };
+		3B4AC0F72DA56B9800EB2F4F /* ImageFeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ImageFeedUITests.xctest; path = "/Users/samurai/Desktop/ImageFeed/build/Debug-iphoneos/ImageFeedUITests-Runner.app/PlugIns/ImageFeedUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3B45F7182E140CAA00B70083 /* Exceptions for "ImageFeed" folder in "ImageFeedTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ImageFeedUITests/ImageFeedTests/ImageFeedTests.swift,
+			);
+			target = 3B2D85822D06E700000D33A6 /* ImageFeedTests */;
+		};
+		3B45F7192E140CAA00B70083 /* Exceptions for "ImageFeed" folder in "ImageFeedUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ImageFeedUITests/ImageFeedUITests.swift,
+				ImageFeedUITests/ImageFeedUITestsLaunchTests.swift,
+			);
+			target = 3B2D858C2D06E700000D33A6 /* ImageFeedUITests */;
+		};
 		3B6B2B852DFF61FE00F2B6DC /* Exceptions for "ImageFeed" folder in "ImageFeed" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				ImageFeedUITests/ImageFeedTests/ImageFeedTests.swift,
+				ImageFeedUITests/ImageFeedUITests.swift,
+				ImageFeedUITests/ImageFeedUITestsLaunchTests.swift,
 				Info.plist,
 			);
 			target = 3B2D856C2D06E6FE000D33A6 /* ImageFeed */;
@@ -49,18 +62,10 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				3B6B2B852DFF61FE00F2B6DC /* Exceptions for "ImageFeed" folder in "ImageFeed" target */,
+				3B45F7182E140CAA00B70083 /* Exceptions for "ImageFeed" folder in "ImageFeedTests" target */,
+				3B45F7192E140CAA00B70083 /* Exceptions for "ImageFeed" folder in "ImageFeedUITests" target */,
 			);
 			path = ImageFeed;
-			sourceTree = "<group>";
-		};
-		3B2D85862D06E700000D33A6 /* ImageFeedTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ImageFeedTests;
-			sourceTree = "<group>";
-		};
-		3B2D85902D06E700000D33A6 /* ImageFeedUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ImageFeedUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -94,11 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				3B2D856F2D06E6FE000D33A6 /* ImageFeed */,
-				3B2D85862D06E700000D33A6 /* ImageFeedTests */,
-				3B2D85902D06E700000D33A6 /* ImageFeedUITests */,
-				3B4AC0F62DA56B9800EB2F4F /* ImageFeedTests.xctest */,
-				3B4AC0F72DA56B9800EB2F4F /* ImageFeedUITests.xctest */,
-				3B6B2B832DFF61EE00F2B6DC /* ImageFeed.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,7 +124,7 @@
 			packageProductDependencies = (
 			);
 			productName = ImageFeed;
-			productReference = 3B4AC0F52DA56B9800EB2F4F /* ImageFeed.app */;
+			productReference = 3B45F6A22E13037A00B70083 /* ImageFeed.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3B2D85822D06E700000D33A6 /* ImageFeedTests */ = {
@@ -139,9 +139,6 @@
 			);
 			dependencies = (
 				3B2D85852D06E700000D33A6 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				3B2D85862D06E700000D33A6 /* ImageFeedTests */,
 			);
 			name = ImageFeedTests;
 			packageProductDependencies = (
@@ -162,9 +159,6 @@
 			);
 			dependencies = (
 				3B2D858F2D06E700000D33A6 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				3B2D85902D06E700000D33A6 /* ImageFeedUITests */,
 			);
 			name = ImageFeedUITests;
 			packageProductDependencies = (
@@ -222,7 +216,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B6B2B842DFF61EE00F2B6DC /* ImageFeed.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
