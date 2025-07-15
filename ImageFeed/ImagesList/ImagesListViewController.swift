@@ -14,21 +14,15 @@ final class ImagesListViewController: UIViewController {
     
     @IBOutlet private var table: UITableView!
     
-    // MARK: - Properties
-      private let currentDate = Date()
-      private let photosName: [String] = Array(0..<20).map { "\($0)" }
-      private lazy var dateFormatter: DateFormatter = {
-          let formatter = DateFormatter()
-          formatter.dateFormat = "d MMMM yyyy"
-          formatter.locale = Locale(identifier: "ru_RU")
-          return formatter
-      }()
-      
-      // Константы размеров согласно макету
-      private let firstPhotoSize = CGSize(width: 343, height: 370)
-      private let regularPhotoSize = CGSize(width: 343, height: 252)
-      private let imageInsets = UIEdgeInsets(top: 4, left: 16, bottom: 4, right: 16)
-      
+    private let photosName: [String] = Array(0..<20).map{ "\($0)" }
+
+    private lazy var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
+        formatter.timeStyle = .none
+        return formatter
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -105,4 +99,3 @@ extension ImagesListViewController: UITableViewDelegate {
         return cellHeight
     }
 }
-
